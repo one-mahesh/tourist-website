@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ladakh - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #667eea;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #667eea;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #667eea;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #667eea;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🏔 LADAKH</h1>
+  <p class="subtitle">High-Altitude Adventure in the Himalayas</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">June - September</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Altitude</div>
+        <div class="fact-value">10,000 - 18,000 ft</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Adventure, Trekking</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Climate</div>
+        <div class="fact-value">Cold & Dry</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Ladakh is a high-altitude region in northern India, situated between the Karakoram and Himalayan mountain ranges. Its main city is Leh. The region is nestled at an altitude of approximately 11,500 feet above sea level, making it one of the highest inhabited regions in the world.</p>
+  </div>
+
+  <!-- History -->
+  <div class="section">
+    <h2>📚 History & Importance</h2>
+    <p>Ladakh was an important trade route between India and Central Asia, serving as a crucial link on the historic Silk Road. It is rich in Tibetan-Buddhist culture, with ancient monasteries and traditions still preserved today. The region has maintained its unique cultural identity for centuries, blending influences from Central Asia, Tibet, and India.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h2>✨ Features</h2>
+    <p>Ladakh is known for its cold desert landscape, snow-covered mountains, and clear blue lakes like Pangong Lake and Tso Moriri. The region features unique monasteries such as Hemis Monastery and Thiksey Monastery. Visitors can experience breathtaking views of the Himalayas, dramatic mountain passes, and the famous Khardung La Pass - one of the world's highest motorable roads.</p>
+    <p style="margin-top: 15px;"><strong>Key Attractions:</strong></p>
+    <ul class="highlights-list">
+      <li><strong>Pangong Lake</strong> - Crystal-clear alpine lake with stunning color changes</li>
+      <li><strong>Khardung La Pass</strong> - World's highest motorable mountain pass (18,380 ft)</li>
+      <li><strong>Nubra Valley</strong> - Remote valley with sand dunes and pristine beauty</li>
+      <li><strong>Hemis Monastery</strong> - Ancient Buddhist monastery with festivals</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit -->
+  <div class="section">
+    <h2>🎯 Why Visit Ladakh?</h2>
+    <p>Ladakh is ideal for adventure lovers, bikers, and nature enthusiasts who seek to explore one of the world's most dramatic landscapes. The region offers trekking opportunities, high-altitude adventures, and motorcycle expeditions across challenging terrain.</p>
+    <ul class="highlights-list">
+      <li><strong>Adventure Activities</strong> - Trekking, mountaineering, and biking expeditions</li>
+      <li><strong>Spiritual Experiences</strong> - Visit ancient monasteries and experience Buddhist culture</li>
+      <li><strong>Photography</strong> - Clear night skies perfect for stargazing and photography</li>
+      <li><strong>Natural Beauty</strong> - Unique landscape unlike anywhere else on Earth</li>
+    </ul>
+  </div>
+
+  <!-- Nearby Places -->
+  <div class="section">
+    <h2>🗺️ Must-Visit Nearby Places</h2>
+    <ul class="highlights-list">
+      <li><strong>Nubra Valley</strong> - Known for sand dunes and Bactrian camels (2-day trip)</li>
+      <li><strong>Pangong Lake</strong> - High-altitude lake stretching into Tibet (3-day trip)</li>
+      <li><strong>Leh Palace</strong> - Historic royal palace with panoramic views (Local)</li>
+      <li><strong>Magnetic Hill</strong> - Optical illusion where vehicles appear to move uphill (Local)</li>
+      <li><strong>Khardung La Pass</strong> - World's highest motorable pass (Half-day trip)</li>
+      <li><strong>Tso Moriri Lake</strong> - Pristine high-altitude lake (3-day trip)</li>
+    </ul>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Ladakh+India" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Ladakh" target="_blank" class="btn btn-secondary">Learn More About Ladakh</a>
+  </div>
+
+</div>
+
+</body>
+</html>
