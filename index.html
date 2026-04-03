@@ -5,26 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incredible India Tourism - Explore Amazing Destinations</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-image-placeholder {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <nav class="navbar">
   <div class="nav-container">
-    <h2 class="nav-logo">🇮🇳 Incredible India</h2>
+    <div class="nav-brand">
+      <h2 class="nav-logo">🇮🇳 Incredible India</h2>
+      <p class="nav-tagline">Explore • Discover • Experience</p>
+    </div>
     <ul class="nav-menu">
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#stats">Statistics</a></li>
-      <li><a href="#map">Map</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#destinations" class="nav-link">Destinations</a></li>
+      <li><a href="#stats" class="nav-link">Statistics</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero">
+<section id="home" class="hero">
   <div class="hero-content">
-    <h1 class="hero-title">Explore the Wonders of India</h1>
-    <p class="hero-subtitle">Discover breathtaking landscapes, ancient temples, and vibrant cultures across 8 incredible destinations</p>
+    <h1 class="hero-title">Explore Incredible India</h1>
+    <p class="hero-subtitle">Discover India's most beautiful tourist destinations with culture, history, and adventure</p>
     <a href="#destinations" class="hero-btn">Start Exploring</a>
   </div>
   <div class="hero-animation">
@@ -38,11 +58,11 @@
 <section id="stats" class="stats">
   <div class="stats-container">
     <div class="stat-card">
-      <h3>8</h3>
+      <h3>10</h3>
       <p>Destinations</p>
     </div>
     <div class="stat-card">
-      <h3>6</h3>
+      <h3>7</h3>
       <p>States</p>
     </div>
     <div class="stat-card">
@@ -60,16 +80,24 @@
 <section id="destinations" class="destinations">
   <h2 class="section-title">Featured Destinations</h2>
   
-  <div class="destinations-grid">
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search destinations..." />
+  </div>
+  
+  <div class="destinations-grid" id="destinationsGrid">
     
     <!-- Ladakh -->
-    <div class="destination-card" onclick="window.location.href='ladakh.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="mountain" onclick="window.location.href='ladakh.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">⛰️</div>
-        <div class="card-badge">Mountains</div>
+        <img src="images/ladakh.jpg" alt="Ladakh" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '⛰️'}))">
+        <div class="card-badge">⛰️ Mountains</div>
       </div>
       <div class="card-content">
-        <h3>Ladakh</h3>
+        <div class="card-header-top">
+          <h3>Ladakh</h3>
+          <div class="card-rating">⭐ 4.8/5</div>
+        </div>
         <p class="destination-type">High-Altitude Adventure</p>
         
         <div class="info-group">
@@ -87,18 +115,24 @@
           </ul>
         </div>
         
-        <a href="ladakh.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Ladakh+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="ladakh.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Kerala -->
-    <div class="destination-card" onclick="window.location.href='kerala.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="beach" onclick="window.location.href='kerala.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🌴</div>
-        <div class="card-badge">Tropical</div>
+        <img src="images/kerala.jpg" alt="Kerala" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌴'}))">
+        <div class="card-badge">🏖️ Tropical</div>
       </div>
       <div class="card-content">
-        <h3>Kerala</h3>
+        <div class="card-header-top">
+          <h3>Kerala</h3>
+          <div class="card-rating">⭐ 4.9/5</div>
+        </div>
         <p class="destination-type">God's Own Country</p>
         
         <div class="info-group">
@@ -116,14 +150,17 @@
           </ul>
         </div>
         
-        <a href="kerala.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Kerala+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="kerala.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Diu -->
     <div class="destination-card" onclick="window.location.href='diu.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🏖️</div>
+        <img src="images/diu.jpg" alt="Diu" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏖️'}))">
         <div class="card-badge">Beach</div>
       </div>
       <div class="card-content">
@@ -145,18 +182,24 @@
           </ul>
         </div>
         
-        <a href="diu.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Diu+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="diu.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Srinagar -->
-    <div class="destination-card" onclick="window.location.href='srinagar.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="mountain" onclick="window.location.href='srinagar.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🌸</div>
-        <div class="card-badge">Valley</div>
+        <img src="images/srinagar.jpg" alt="Srinagar" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌸'}))">
+        <div class="card-badge">⛰️ Valley</div>
       </div>
       <div class="card-content">
-        <h3>Srinagar</h3>
+        <div class="card-header-top">
+          <h3>Srinagar</h3>
+          <div class="card-rating">⭐ 4.7/5</div>
+        </div>
         <p class="destination-type">Paradise on Earth</p>
         
         <div class="info-group">
@@ -174,18 +217,24 @@
           </ul>
         </div>
         
-        <a href="srinagar.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Srinagar+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="srinagar.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Mount Abu -->
-    <div class="destination-card" onclick="window.location.href='mount-abu.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="mountain" onclick="window.location.href='mount-abu.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🏔️</div>
-        <div class="card-badge">Hill Station</div>
+        <img src="images/mount-abu.jpg" alt="Mount Abu" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏔️'}))">
+        <div class="card-badge">⛰️ Hill Station</div>
       </div>
       <div class="card-content">
-        <h3>Mount Abu</h3>
+        <div class="card-header-top">
+          <h3>Mount Abu</h3>
+          <div class="card-rating">⭐ 4.5/5</div>
+        </div>
         <p class="destination-type">Rajasthan's Jewel</p>
         
         <div class="info-group">
@@ -203,18 +252,24 @@
           </ul>
         </div>
         
-        <a href="mount-abu.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Mount+Abu+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="mount-abu.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Rameswaram -->
-    <div class="destination-card" onclick="window.location.href='rameswaram.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="temple" onclick="window.location.href='rameswaram.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #ffa400 0%, #ffaa4d 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🕉️</div>
-        <div class="card-badge">Temple</div>
+        <img src="images/rameswaram.jpg" alt="Rameswaram" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🕉️'}))">
+        <div class="card-badge">🛕 Temple</div>
       </div>
       <div class="card-content">
-        <h3>Rameswaram</h3>
+        <div class="card-header-top">
+          <h3>Rameswaram</h3>
+          <div class="card-rating">⭐ 4.8/5</div>
+        </div>
         <p class="destination-type">Sacred Pilgrimage</p>
         
         <div class="info-group">
@@ -232,18 +287,25 @@
           </ul>
         </div>
         
-        <a href="rameswaram.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+
+          <a href="https://maps.google.com/maps/search/Rameswaram+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="rameswaram.html" class="learn-more" onclick="event.stopPropagation()">More →</a>
+        </div>
       </div>
     </div>
 
-    <!-- Junagadh -->
-    <div class="destination-card" onclick="window.location.href='junagadh.html'" style="cursor: pointer;">
+    <!--Junagadh -->
+    <div class="destination-card" data-category="temple" onclick="window.location.href='junagadh.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #12c2e9 0%, #c471ed 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🦁</div>
-        <div class="card-badge">Wildlife</div>
+        <img src="images/junagadh.jpg" alt="Junagadh" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🦁'}))">
+        <div class="card-badge">🦁 Temple</div>
       </div>
       <div class="card-content">
-        <h3>Junagadh</h3>
+        <div class="card-header-top">
+          <h3>Junagadh</h3>
+          <div class="card-rating">⭐ 4.4/5</div>
+        </div>
         <p class="destination-type">Historical Wonder</p>
         
         <div class="info-group">
@@ -261,18 +323,24 @@
           </ul>
         </div>
         
-        <a href="junagadh.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Junagadh+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="junagadh.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
     <!-- Chennai -->
-    <div class="destination-card" onclick="window.location.href='chennai.html'" style="cursor: pointer;">
+    <div class="destination-card" data-category="city" onclick="window.location.href='chennai.html'" style="cursor: pointer;">
       <div class="card-header" style="background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%); position: relative; overflow: hidden;">
-        <div class="card-image-placeholder">🌊</div>
-        <div class="card-badge">Metro City</div>
+        <img src="images/chennai.jpg" alt="Chennai" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌊'}))">
+        <div class="card-badge">🏙️ Metro City</div>
       </div>
       <div class="card-content">
-        <h3>Chennai</h3>
+        <div class="card-header-top">
+          <h3>Chennai</h3>
+          <div class="card-rating">⭐ 4.3/5</div>
+        </div>
         <p class="destination-type">Cultural Capital</p>
         
         <div class="info-group">
@@ -290,7 +358,82 @@
           </ul>
         </div>
         
-        <a href="chennai.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        <div class="card-actions">
+
+          <a href="https://maps.google.com/maps/search/Chennai+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="chennai.html" class="learn-more" onclick="event.stopPropagation()">More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ayodhya -->
+    <div class="destination-card" data-category="temple" onclick="window.location.href='ayodhya.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #ff9a56 0%, #ff8c42 100%); position: relative; overflow: hidden;">
+        <img src="images/ayodhya.jpg" alt="Ayodhya" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🛕'}))">
+        <div class="card-badge">🛕 Pilgrimage</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Ayodhya</h3>
+          <div class="card-rating">⭐ 4.9/5</div>
+        </div>
+        <p class="destination-type">Birthplace of Lord Rama</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">October - March</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Ram Mandir - Grand temple dedicated to Lord Rama</li>
+            <li>Sarayu River Ghats - Sacred bathing areas</li>
+            <li>Hanuman Garhi - Ancient temple complex</li>
+            <li>Spiritual atmosphere with religious rituals</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+
+          <a href="https://maps.google.com/maps/search/Ayodhya+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="ayodhya.html" class="learn-more" onclick="event.stopPropagation()">More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agra -->
+    <div class="destination-card" data-category="city" onclick="window.location.href='agra.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #d4a574 0%, #c9967f 100%); position: relative; overflow: hidden;">
+        <img src="images/agra.jpg" alt="Agra" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏰'}))">
+        <div class="card-badge">🏰 Heritage</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Agra</h3>
+          <div class="card-rating">⭐ 4.9/5</div>
+        </div>
+        <p class="destination-type">City of Taj Mahal</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">October - March</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Taj Mahal - Symbol of love and beauty</li>
+            <li>Agra Fort - Red sandstone fortress</li>
+            <li>Fatehpur Sikri - Abandoned Mughal city</li>
+            <li>One of Seven Wonders of the World</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Agra+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="agra.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
       </div>
     </div>
 
@@ -303,8 +446,8 @@
   <div class="map-container">
     <div class="map-placeholder">
       <div class="map-info">
-        <h3>🗺️ 8 Amazing Destinations Across India</h3>
-        <p>North: Ladakh, Srinagar</p>
+        <h3>🗺️ 10 Amazing Destinations Across India</h3>
+        <p>North: Ayodhya, Agra, Ladakh, Srinagar</p>
         <p>West: Diu, Mount Abu, Junagadh</p>
         <p>South: Rameswaram, Chennai</p>
         <p>Southwest: Kerala</p>
@@ -316,8 +459,8 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-content">
-    <p>&copy; 2026 Incredible India Tourism. Discover the beauty of India.</p>
-    <p>All destinations featured are UNESCO recognized or culturally significant attractions.</p>
+    <p>&copy; 2026 Incredible India Tourism | Developed by Mahesh</p>
+    <p>Discover India's cultural heritage, natural beauty, and diverse experiences</p>
   </div>
 </footer>
 

@@ -16,6 +16,16 @@
       }
     ],
     "meta-viewport": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "backdrop-filter"
+        ]
+      }
+    ]
   }
 }
