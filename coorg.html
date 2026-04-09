@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Coorg - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #8b6914 0%, #c9a961 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #8b6914 0%, #c9a961 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #8b6914;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #8b6914;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #8b6914;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #8b6914;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #8b6914;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #8b6914 0%, #c9a961 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(139, 105, 20, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(139, 105, 20, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #8b6914;
+      border: 2px solid #8b6914;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🌿 COORG</h1>
+  <p class="subtitle">The Land of Coffee - Karnataka's Green Treasure</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">September - March</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Altitude</div>
+        <div class="fact-value">2,000 - 6,000 ft</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Nature, Adventure</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Climate</div>
+        <div class="fact-value">Cool & Pleasant</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Coorg (Kodagu district) is a hilly region in the Western Ghats of Karnataka, South India, situated between 2,000-6,000 feet altitude. Located 260 km from Bangalore and 260 km from Cochin, Coorg sits at the convergence of three states (Karnataka, Tamil Nadu, Kerala). The undulating landscape covered with coffee estates, cardamom plantations, and dense forests makes it geographically distinct. The region experiences dual monsoons, maintaining year-round greenery. Coorg is often called the "Scotland of India" for its aesthetic resemblance to Scottish highlands.</p>
+  </div>
+
+  <!-- History -->
+  <div class="section">
+    <h2>📚 History & Cultural Significance</h2>
+    <p>Coorg has a unique history distinct from surrounding regions. The Kodava people, indigenous to Coorg for centuries, developed distinct language (Kodava), culture, and traditions. Before British arrival, Coorg was independent under its own rulers, resisting both Mughal and South Indian kingdom expansions. The Kodavas were primarily warriors and agriculturalists with distinctive martial traditions (Kodava martial tradition influenced Nair warrior caste).
+    <p style="margin-top: 15px;">The British discovered Coorg's ideal climate and soil for coffee cultivation in the 1840s. British planters established the first coffee estates, transforming the landscape from forests into plantations. The cool climate (15-25°C) and volcanic soil produced high-quality "Coorg Arabica" coffee globally recognized. By the early 1900s, Coorg became India's coffee capital, with estates covering 20,000+ hectares. The British introduced colonial infrastructure, churches, and clubs still visible today.</p>
+    <p style="margin-top: 15px;">During Indian independence struggle, Coorgi soldiers gained reputation as fierce fighters (many medals in Indian army). Post-independence, Coorg merged with Karnataka state. Today, Coorg uniquely balances coffee production (world exports), tribal Kodava traditions preservation, and eco-tourism development. The land reform policies protect small farmer cooperatives, making Coorg a unique model of plantation and tradition coexistence.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h2>✨ Key Attractions & Features</h2>
+    <p>Coorg's charm lies in emerald-green coffee and spice plantations, mist-laden valleys, and rich cultural heritage. The region represents successful integration of agriculture, nature conservation, and tourism combined with unique Kodava traditions.</p>
+    <ul class="highlights-list">
+      <li><strong>Coffee Plantations</strong> - 23,000+ hectares of coffee estates; 70% of India's coffee production; Homogeneous high-altitude Coorg Arabica beans (world-quality); Estate tours showing cultivation to cup process; Freshly roasted coffee tasting; Pick your own coffee cherries in harvest season (October-February)</li>
+      <li><strong>Abbey Falls</strong> - 70-meter cascade surrounded by lush vegetation; Coffee plantations backdrop; Monsoon swelling (June-September) creates spectacular flow; Trekking trail through forest to falls; Picnic facilities; Iridescent mist at certain times</li>
+      <li><strong>Raja's Seat</strong> - Historic hilltop named after Coorg's last king; Panoramic vistas of Madikeri town, plantations, and valleys; Sunset viewing creates golden landscape; Bird's eye view of entire region; Meditation spot with historic significance</li>
+      <li><strong>Talacauvery</strong> - Source of Kaveri River (South India's most important river); Temple dedicated to Kaveri goddess; Pilgrimage destination; Geysers (Kaveri spurting from ground in certain seasons); Spectacle occurs during monsoon onset (June); Spiritual significance across South India</li>
+      <li><strong>Namdroling Monastery</strong> - Golden Tibetan Buddhist monastery built 1963; Massive gold-plated Buddha statue (80+ feet); Tibetan refugee settlement; Spiritual center attracting thousands; Architectural blend of Tibetan and Indian styles; Peaceful meditation atmosphere</li>
+      <li><strong>Madikeri Fort</strong> - Historic fort dating to Coorg kingdom era; 7-meter tall stone walls; Moat and bastions; Architecture reflecting Hindu and colonial influences; Prison tower with historical significance; Views over Madikeri town</li>
+      <li><strong>Spice Plantations</strong> - Cardamom, pepper, and cinnamon estates; Aromatic plant gardens; Traditional processing methods; Spice factory tours; Freshly harvested spices for purchase; Learning about ancient Spice Route commerce</li>
+      <li><strong>Iruppu Falls</strong> - Beautiful waterfall on river Iruppu; Associated with Lord Rama legend; Pilgrimage site; Temple at falls; Natural pool for bathing; Trekking through forest ecosystem</li>
+      <li><strong>Kushalnagar Buddhist Settlement</strong> - Tibetan refugee community settlement; Monasteries and spiritual centers; Authentic Tibetan culture; Handicraft shops; Traditional Tibetan restaurants serving momos and thukpa</li>
+      <li><strong>Kodagu Heritage & Culture</strong> - Kodava martial traditions (Kodava pathasaala teaching martial art); Traditional Kodava houses with sloping roofs; Kodava cuisine speciality (Pandi Curry with pork); Annual Kodava festival (Cauvery Festival); Museums documenting Kodava history
+</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit -->
+  <div class="section">
+    <h2>🎯 Experiences & Why Visit Coorg?</h2>
+    <p>Coorg offers the rare combination of agricultural tourism (coffee estates), adventure (trekking and waterfalls), spiritual experiences (temples and monasteries), and unique indigenous culture in a single destination.</p>
+    <ul class="highlights-list">
+      <li><strong>Coffee Estate Tourism</strong> - Tour working estates learning cultivation secrets; Pick coffee cherries during harvest; Visit processing factories understanding drying, roasting, grinding; Cup tasting pure origin coffee; Purchase freshly roasted beans directly from estates; Farm-to-table freshness experience</li>
+      <li><strong>Trekking & Adventure</strong> - Multiple difficulty levels catering all fitness levels; Waterfall treks (Abbey, Iruppu falls); Ridge treks with valley panoramas; Rock formations climbing; Overnight camping in plantations; Bird watching while trekking (200+ species)</li>
+      <li><strong>Wellness & Relaxation</strong> - Plantation homestays offering peaceful retreats; Cool climate naturally therapeutic; Ayurvedic treatments at resorts; Yoga in natural settings; Herbal steam baths using plantation herbs; Meditation in monastery settings</li>
+      <li><strong>Cultural Immersion</strong> - Stay with Kodava families; Learn martial art basics; Traditional cooking classes (Kodava specialties); Festivals participation (Cauvery Festival, Madras Day); Shopping for Kodava cultural crafts and artifacts</li>
+      <li><strong>Spiritual Experiences</strong> - Namdroling Monastery meditation sessions; Talacauvery pilgrimage; Temple darshan at sacred sites; Learn about Buddhism and Hindu traditions; Spiritual community interaction</li>
+      <li><strong>Photography Paradise</strong> - Coffee plantation rows creating geometric patterns; Misty valleys at sunrise; Waterfalls in monsoon flow; Exotic bird species documentation; Monastery and temple architecture; Local Kodava people and traditions</li>
+      <li><strong>Culinary Experiences</strong> - Kodava cuisine specialties (Pandi Curry, Akki Roti); Fresh coffee break at plantations; Cardamom and spice-infused dishes; Local honey and fruits; Traditional Kerala and Tamil cuisine influence</li>
+      <li><strong>Seasonal Experiences</strong> - October-February: Coffee harvest season (ripe red berries); March-May: Flower blooms and clear skies; June-September: Monsoon with flowing waterfalls and fresh greenery; Year-round pleasant climate</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💡 Practical Information</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+      <div>
+        <h4 style="color: #8b4513; margin-bottom: 10px;">💰 Budget (Daily)</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget</strong> - ₹900-1,600 (homestays, local food, plantation tours)</li>
+          <li><strong>Mid-range</strong> - ₹2,000-4,000 (resort hotels, restaurant meals, guided tours)</li>
+          <li><strong>Luxury</strong> - ₹5,000+ (premium plantation stays, fine dining)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #8b4513; margin-bottom: 10px;">📅 Best Time to Visit</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>September-May</strong> - Pleasant weather (15-28°C), clear views</li>
+          <li><strong>Best Months:</strong> December-February (coolest, least crowded)</li>
+          <li><strong>Avoid:</strong> June-August (heavy monsoon, landslide risks)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #8b4513; margin-bottom: 10px;">🚌 How to Reach</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Air:</strong> Bangalore Airport (240km, 4-5 hours by road)</li>
+          <li><strong>Rail:</strong> Madikeri Bus Station (closest train at Mysore, 95km away)</li>
+          <li><strong>Road:</strong> Well-connected highways from Bangalore, Mysore, Mangalore</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #8b4513; margin-bottom: 10px;">🏨 Where to Stay</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget:</strong> Homestays, budget guesthouses (₹600-1,200)</li>
+          <li><strong>Mid-range:</strong> 3-4 star resort hotels (₹1,500-3,500)</li>
+          <li><strong>Luxury:</strong> Premium plantation stays, hill resorts (₹5,000+)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #8b4513; margin-bottom: 10px;">⏱️ Recommended Duration</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Quick Visit:</strong> 2-3 days (coffee plantations, Abbey Falls)</li>
+          <li><strong>Standard Stay:</strong> 3-4 days (plantations, culture, trekking)</li>
+          <li><strong>Extended Tour:</strong> 5-7 days (monastery, wildlife, cultural immersion)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nearby Places -->
+  <div class="section">
+    <h2>🗺️ Must-Visit Nearby Places</h2>
+    <ul class="highlights-list">
+      <li><strong>Abbey Falls</strong> - Most popular waterfall (Local day trip)</li>
+      <li><strong>Raja's Seat</strong> - Hilltop viewpoint (Local)</li>
+      <li><strong>Talacauvery</strong> - River source temple (Half day trip)</li>
+      <li><strong>Coffee Estates</strong> - Plantation tours available (Local)</li>
+      <li><strong>Namdroling Monastery</strong> - Spiritual site (Local day trip)</li>
+      <li><strong>Iruppu Falls</strong> - Scenic waterfall (Day trip)</li>
+    </ul>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Coorg+Karnataka+India" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Coorg" target="_blank" class="btn btn-secondary">Learn More About Coorg</a>
+  </div>
+
+</div>
+
+</body>
+</html>

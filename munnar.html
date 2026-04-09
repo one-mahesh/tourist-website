@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Munnar - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #11998e;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #11998e;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #11998e;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #11998e;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #11998e;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(17, 153, 142, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #11998e;
+      border: 2px solid #11998e;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🌄 MUNNAR</h1>
+  <p class="subtitle">Tea Garden Paradise in the Kerala Mountains</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">October - May</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Altitude</div>
+        <div class="fact-value">5,000 - 8,000 ft</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Nature, Trekking</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Climate</div>
+        <div class="fact-value">Cool & Misty</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Munnar is a picturesque hill station located in the Western Ghats mountain range of Idukki district, Kerala, southern India. Situated at an altitude between 5,000-8,000 feet (1,600-2,400 meters), the town sits at the confluence of three mountain streams - Mudrapuzha, Nallathanni, and Kundala - hence the name "Munnar" meaning "three rivers" in Malayalam. Located 140 km from Kochi, the hill station is easily accessible by road. The scenic Munnar plateau is surrounded by verdant tea plantations, spice gardens, and dense forests of the Western Ghats biodiversity hotspot.</p>
+  </div>
+
+  <!-- History -->
+  <div class="section">
+    <h2>📚 History & Cultural Significance</h2>
+    <p>Munnar's history is fundamentally tied to British colonial tea plantation development. In 1880, British planters discovered the region's ideal climate and altitude for high-quality tea cultivation. The British established the first tea plantations around Munnar, transforming the landscape from dense forests into terraced tea gardens. The region became one of the British Empire's major tea production centers, rivaling famous producers like Darjeeling.
+    <p style="margin-top: 15px;">The hill station was strategically developed with colonial infrastructure: railways, cool colonial bungalows, and clubhouses reflecting British architectural style. The Kundala Valley damming project (1902) was an engineering marvel of its time. By the early 20th century, Munnar had become Kerala's premier hill station with estates like Kanan Devan and High Range producing world-class tea.</p>
+    <p style="margin-top: 15px;">Post-independence, Munnar continued expanding as a tourism destination while maintaining tea production. Today, the region produces some of India's finest teas, with over 45,000 hectares under tea cultivation. The Nilgiri tahr (endangered species) persists in Eravikulam National Park, making Munnar an important conservation area. Modern Munnar balances heritage preservation with eco-tourism development.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h2>✨ Key Attractions & Features</h2>
+    <p>Munnar's charm lies in its rolling tea-covered hills, mist-laden mornings, and pristine natural beauty combined with colonial heritage architecture. The region represents the perfect hill station experience with pleasant climate year-round, diverse flora-fauna, and adventure opportunities.</p>
+    <ul class="highlights-list">
+      <li><strong>Tea Plantations</strong> - 45,000+ hectares of verdant tea gardens; Terraced hillsides creating stunning landscape patterns; Working estates offering factory tours; Opportunity to learn tea processing (plucking, withering, rolling, fermentation, drying); Auction at tea markets; High-grown tea tasting sessions</li>
+      <li><strong>Eravikulam National Park</strong> - 9.7 sq km protected area; Home to critically endangered Nilgiri tahr (mountain goat endemic to Western Ghats); Population of 600+ tahr; Neelakurinji flower blooms (every 12 years, last bloomed 2018); Trek to Anamudi Peak (highest point in South India at 8,842 ft)</li>
+      <li><strong>Mattupetty Dam & Lake</strong> - Scenic artificial reservoir built 1907; Boating facilities with motorboats and paddleboats; Mountain backdrop creates picturesque views; Olive ridley turtles occasionally seen; Adventure sports activities (water skiing)</li>
+      <li><strong>Top Station</strong> - Highest point in Munnar at 6,500 ft; Panoramic vistas of tea estates and Western Ghats; Clear Day views extending 70+ km; Sunrise and sunset viewing points; Trekking starting point to various trails</li>
+      <li><strong>Kundala Lake & Dam</strong> - Built 1902 by British engineers; Scenic alpine lake with surrounding tea estates; Boating and fishing; Picnic spots; Historic engineering achievement</li>
+      <li><strong>Anamudi Peak Trek</strong> - South India's highest mountain (8,842 ft); Challenging 2-day trek; Route through Eravikulam National Park; Alpine meadows and tahr population viewing; Clear weather provides panoramic vistas</li>
+      <li><strong>Echo Point</strong> - Natural acoustic phenomenon; Mountain valley amplifies sound; Popular photo spot with natural echo effect; Forest setting with wildlife</li>
+      <li><strong>Tata Tea Museum</strong> - Interactive museum showcasing tea history; Tea processing demonstrations; Vintage equipment displays; Tea tasting sessions; Colonial-era photographs and memorabilia</li>
+      <li><strong>Chinnar Wildlife Sanctuary</strong> - 23.5 sq km protected area; Home to grizzled giant squirrels and other endemic species; Dry deciduous forest habitat; Trekking and wildlife spotting opportunities</li>
+      <li><strong>Colonial Heritage Architecture</strong> - Victorian-era bungalows; Golf course (among India's oldest); Colonial clubs; Church structures from British era; Tea estate management houses reflecting architecture</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit -->
+  <div class="section">
+    <h2>🎯 Experiences & Why Visit Munnar?</h2>
+    <p>Munnar offers the quintessential hill station experience combining natural beauty, adventure, cultural heritage, and relaxation. It's Kerala's premium destination for those seeking cool climate, scenic landscapes, and authentic tea culture experiences.</p>
+    <ul class="highlights-list">
+      <li><strong>Tea Plantation Tourism</strong> - Tour working tea estates and learn cultivation secrets; Visit tea processing factories; Participate in tea leaf plucking; Attend tea auctions; Sample fresh varieties at source; Meet estate workers and learn their stories</li>
+      <li><strong>Trekking & Adventure</strong> - Multiple difficulty levels (easy to challenging); Anamudi Peak trek (highest South India); Forest trails through Western Ghats; Waterfall treks; Rock climbing on nearby crags; Rappelling through waterfalls</li>
+      <li><strong>Wildlife & Nature</strong> - Spot endangered Nilgiri tahr in Eravikulam; Elephant and wild boar spotting on early morning treks; Rich bird life (over 150 species); Neelakurinji flower viewing (blooms every 12 years); Medicinal plants and spices exploration</li>
+      <li><strong>Photography Paradise</strong> - Tea terraces creating patterns across hillsides; Mist-laden valleys at sunrise; Wildflower meadows; Colonial architecture documentation; Wildlife photography opportunities; Sunset views from mountain peaks</li>
+      <li><strong>Relaxation & Wellness</strong> - Cool climate naturally refreshing; Plantation homestays for peaceful retreats; Ayurvedic treatments at resorts; Spa and wellness centers; Meditative walks through gardens; Quiet evenings with misty views</li>
+      <li><strong>Cultural Immersion</strong> - Stay in colonial bungalows; Experience estate worker lifestyle; Learn Kodava tribal traditions; Attend local festivals; Taste local cuisine (puttu, appam, spicy curries); Shopping at local markets</li>
+      <li><strong>Seasons & Experiences</strong> - December-January: Misty mornings and cool days; February-May: Sunny weather and blooming flowers; June-September: Monsoon with fresh greenery and flowing waterfalls; October-November: Clear skies with long visibility</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💡 Practical Information</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+      <div>
+        <h4 style="color: #51cf66; margin-bottom: 10px;">💰 Budget (Daily)</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget</strong> - ₹900-1,600 (homestays, local food, budget treks)</li>
+          <li><strong>Mid-range</strong> - ₹2,000-4,000 (resort hotels, restaurant meals, guided tours)</li>
+          <li><strong>Luxury</strong> - ₹5,000+ (premium tea estate stays, fine dining)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #51cf66; margin-bottom: 10px;">📅 Best Time to Visit</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>September-May</strong> - Pleasant weather, clear views (10-25°C)</li>
+          <li><strong>Best Months:</strong> December-February (coolest, clearest)</li>
+          <li><strong>Avoid:</strong> June-August (monsoon, heavy rainfall)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #51cf66; margin-bottom: 10px;">🚌 How to Reach</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Air:</strong> Cochin Airport (190km, 4-5 hours by road)</li>
+          <li><strong>Rail:</strong> Aluva Station (nearest, 2-3 hours to Munnar by road)</li>
+          <li><strong>Road:</strong> Well-connected highways from Kochi, Bangalore (scenic routes)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #51cf66; margin-bottom: 10px;">🏨 Where to Stay</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget:</strong> Guesthouses, budget homestays (₹600-1,200)</li>
+          <li><strong>Mid-range:</strong> 3-4 star resort hotels (₹1,500-3,500)</li>
+          <li><strong>Luxury:</strong> Premium tea estate stays, hill resorts (₹5,000+)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #51cf66; margin-bottom: 10px;">⏱️ Recommended Duration</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Quick Visit:</strong> 2-3 days (tea plantations, Mattupetty)</li>
+          <li><strong>Standard Stay:</strong> 3-4 days (trekking, Eravikulam, lakes)</li>
+          <li><strong>Extended Tour:</strong> 5-7 days (surrounding hill stations, nature immersion)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nearby Places -->
+  <div class="section">
+    <h2>🗺️ Must-Visit Nearby Places</h2>
+    <ul class="highlights-list">
+      <li><strong>Eravikulam National Park</strong> - Pristine wildlife sanctuary (Half day)</li>
+      <li><strong>Mattupetty Dam</strong> - Scenic boating location (Local)</li>
+      <li><strong>Top Station</strong> - Best viewpoint in the region (Local day trip)</li>
+      <li><strong>Tea Plantations</strong> - Working estates to visit (Local)</li>
+      <li><strong>Anamudi Peak</strong> - Highest mountain in South India (Day trek)</li>
+      <li><strong>Echo Point</strong> - Natural echo phenomenon location (Local)</li>
+    </ul>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Munnar+Kerala+India" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Munnar" target="_blank" class="btn btn-secondary">Learn More About Munnar</a>
+  </div>
+
+</div>
+
+</body>
+</html>

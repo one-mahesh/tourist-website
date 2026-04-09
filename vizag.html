@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vizag - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #00D2FF 0%, #3A7BD5 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #00D2FF 0%, #3A7BD5 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #00D2FF;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #00D2FF;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #00D2FF;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #00D2FF;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #00D2FF;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #00D2FF 0%, #3A7BD5 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 210, 255, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #00D2FF;
+      border: 2px solid #00D2FF;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🌊 VIZAG</h1>
+  <p class="subtitle">Coastal Gem - Andhra Pradesh's Beach Paradise</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">October - February</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Location</div>
+        <div class="fact-value">Sea Level</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Beach & Adventure</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Climate</div>
+        <div class="fact-value">Tropical & Warm</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Visakhapatnam (Vizag) is located on the Coromandel Coast in Andhra Pradesh, facing the Bay of Bengal. Positioned between pristine natural harbors (Vizag Harbor and Gangavaram), it is one of India's major maritime gateways. 300 km northeast of Hyderabad and 900 km south of Kolkata, with excellent air, rail, and road connectivity.</p>
+  </div>
+
+  <!-- History -->
+  <div class="section">
+    <h2>📚 History & Importance</h2>
+    <p>Vizag's history spans over 2,000 years of maritime trade, beginning as a significant Chola dynasty port and later an important center under the Nizams of Hyderabad. The region was a crucial trading hub for spices, textiles, and precious goods moving between South Asia and Southeast Asia throughout the medieval period. This ancient prosperity attracted the Portuguese and then British colonial powers who established their naval dominance here during the 17th-18th centuries.</p>
+    <p>During the British Raj, Vizag transformed into one of India's premier naval ports with strategic military importance. The British developed modern port infrastructure, built administrative buildings, and established naval shipyards that remain operational today. The city became a center for Indian nationalist activities and played a significant role during India's independence movement with several freedom fighters originating from the region.</p>
+    <p>In post-independence India, Vizag has evolved into a modern maritime and industrial metropolis. The establishment of the Vishakhapatnam Steel Plant (1970s), major IT industry presence, and continued port expansion have made it a vital economic hub for India's eastern coast. Today, Vizag balances its ancient maritime heritage with contemporary development, hosting naval facilities, shipbuilding industries, and emerging as a destination for tech entrepreneurs and tourists seeking coastal beauty combined with industrial heritage.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h2>✨ Main Attractions</h2>
+    <p>Vizag offers an exceptional blend of beaches, adventure activities, historical sites, and cultural experiences.</p>
+    <ul class="highlights-list">
+      <li><strong>RK Beach</strong> - The city's primary beach with 3km sandy shoreline, perfect for morning walks, sunset views, and beach volleyball games. Named after Rajasekhara Reddy, it features seafood restaurants and water sports facilities</li>
+      <li><strong>Kailasagiri Park</strong> - A 500-ft hilltop park offering 360-degree panoramic views of Bay of Bengal and city skyline. Features a cable car ride (90m ascent), 40m Shiva statue, and peaceful gardens ideal for photography and meditation</li>
+      <li><strong>Visakha Museum</strong> - Comprehensive museum displaying ancient artifacts from Dravidian civilization, Buddhist sculptures (Amaravati school), Mughal period items, and tribal art collections spanning 2,000 years of regional history</li>
+      <li><strong>Submarine Museum (INS Kursura)</strong> - India's first naval submarine converted into a museum, showcasing naval warfare history, submarine technology, and military heritage with interactive exhibits and torpedo displays</li>
+      <li><strong>Yarada Beach</strong> - A hidden gem located 20km south, featuring pristine sands, crystal-clear waters, dramatic cliffs, and fewer crowds. Popular for adventure activities including cliff jumping and water sports</li>
+      <li><strong>Araku Valley</strong> - A scenic hill station 115km inland at 1,000m elevation, featuring lush coffee and indigenous tribal communities (Adivasi villages), waterfalls (Ananthagiri Falls), scenic train rides on the historic Narrow Gauge Railway, and tribal culture experiences</li>
+      <li><strong>Borra Caves</strong> - Ancient limestone caverns 95km from city forming underground chambers with stunning stalagmite/stalactite formations. Believed to be 1.5 million years old with spiritual significance and adventure caving opportunities</li>
+      <li><strong>Visakhapatnam Port</strong> - India's major port with heritage architecture, international container terminals, and guided tours showcasing maritime logistics and India's trade infrastructure development</li>
+      <li><strong>Rama Krishna Beach Memorial</strong> - Sacred site with peaceful gardens overlooking the Bay of Bengal, dedicated to spiritual contemplation and evening meditation with local pilgrims and tourists</li>
+      <li><strong>Gangavaram Port & Marina</strong> - Modern port combined with marina facilities offering yacht experiences, water sports, dolphin spotting cruises, and coastal sunset tours along pristine waters</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit -->
+  <div class="section">
+    <h2>🎯 Experiences & Activities</h2>
+    <p>Vizag offers diverse tourism experiences from coastal relaxation to adventure activities and cultural immersion.</p>
+    <ul class="highlights-list">
+      <li><strong>Beach & Water Activities</strong> - Sunrise/sunset beach walks, swimming at safe zones, parasailing, jet skiing, diving, dolphin spotting cruises, and water scooter rides along the Bay of Bengal</li>
+      <li><strong>Hill Station Adventure</strong> - Trekking in Araku Valley, coffee plantation tours, indigenous tribal village visits, waterfall exploration, and scenic train rides on heritage narrow gauge railways</li>
+      <li><strong>Underwater Exploration</strong> - Submarine museum tours, marine theme park visits, aquarium exploration, and coral reef snorkeling in coastal zones</li>
+      <li><strong>Naval & Military Heritage</strong> - Warship museum tours, port heritage walks, naval academy visitor programs, and maritime history exhibitions</li>
+      <li><strong>Nature & Wildlife</strong> - Cave exploration at Borra Caves with adventure caving, wildlife sanctuary visits in nearby areas, birdwatching, and nature photography expeditions</li>
+      <li><strong>Spiritual & Contemplative</strong> - Temple visits including ancient Buddhist sites and Hindu temples, meditation sessions at scenic viewpoints, pilgrimage walks along coastal areas, and spiritual day retreats</li>
+      <li><strong>Culinary Experiences</strong> - Seafood feasts at beachfront restaurants, tribal cuisine tastings in Araku Valley, traditional Andhra food preparation classes, and tasting local delicacies like chutneys and traditional sweets</li>
+      <li><strong>Photography & Art</strong> - Landscape photography at Kailasagiri Park and Yarada cliffs, street photography in old city areas, sunset/sunrise shoots, and tribal art documentation</li>
+      <li><strong>Leisure & Wellness</strong> - Beach yoga sessions, ayurvedic spa treatments, wellness retreats, and relaxation resorts with sea views</li>
+      <li><strong>Seasonal Festivals</strong> - Beach festivals during October-November, cultural celebrations, naval week events, and local harvest celebrations in nearby villages</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💡 Practical Information</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+      <div>
+        <h4 style="color: #00D2FF; margin-bottom: 10px;">💰 Budget (Daily)</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget</strong> - ₹800-1,500 (local hotels, seafood restaurants, local transport)</li>
+          <li><strong>Mid-range</strong> - ₹2,000-4,000 (3-4 star beachfront hotels, guided tours)</li>
+          <li><strong>Luxury</strong> - ₹5,000+ (5-star beach resorts, fine dining, private guides)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #00D2FF; margin-bottom: 10px;">📅 Best Time to Visit</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>October-February</strong> - Pleasant weather (18-28°C), ideal for beaches</li>
+          <li><strong>Best Months:</strong> November-January (coolest, clearest skies)</li>
+          <li><strong>Avoid:</strong> May-September (extreme heat, monsoon)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #00D2FF; margin-bottom: 10px;">✈️ How to Reach</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Air:</strong> Visakhapatnam Airport (flights from major metros like Delhi, Bangalore)</li>
+          <li><strong>Rail:</strong> Visakhapatnam Junction (excellent trains from Chennai, Kolkata, Delhi)</li>
+          <li><strong>Road:</strong> National Highway 5 connects Chennai, Kolkata routes perfectly</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #00D2FF; margin-bottom: 10px;">🏨 Where to Stay</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget:</strong> Budget hotels near RK Beach (₹600-1,200)</li>
+          <li><strong>Mid-range:</strong> 3-4 star beachfront hotels (₹1,500-3,500)</li>
+          <li><strong>Luxury:</strong> 5-star resort hotels with beach access (₹5,000+)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #00D2FF; margin-bottom: 10px;">⏱️ Recommended Duration</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Quick Visit:</strong> 2-3 days (beaches, Kailasagiri, Submarine Museum)</li>
+          <li><strong>Standard Stay:</strong> 3-4 days (beaches, hill stations, water sports)</li>
+          <li><strong>Extended Tour:</strong> 5-7 days (Araku Valley trek, Borra Caves exploration)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nearby Places -->
+  <div class="section">
+    <h2>🗺️ Must-Visit Nearby Places</h2>
+    <ul class="highlights-list">
+      <li><strong>RK Beach</strong> - Main beach for swimming and walks (Local)</li>
+      <li><strong>Kailasagiri Park</strong> - Hilltop with cable car and views (Local)</li>
+      <li><strong>Borra Caves</strong> - Ancient limestone formations (Day trip)</li>
+      <li><strong>Araku Valley</strong> - Scenic hill station retreat (Day trip)</li>
+      <li><strong>Submarine Museum</strong> - Unique naval museum (Local)</li>
+      <li><strong>Yarada Beach</strong> - Off-beat beach spot (Local)</li>
+    </ul>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Visakhapatnam+Andhra+Pradesh+India" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Visakhapatnam" target="_blank" class="btn btn-secondary">Learn More About Vizag</a>
+  </div>
+
+</div>
+
+</body>
+</html>

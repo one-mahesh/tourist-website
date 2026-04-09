@@ -58,11 +58,11 @@
 <section id="stats" class="stats">
   <div class="stats-container">
     <div class="stat-card">
-      <h3>10</h3>
+      <h3>17</h3>
       <p>Destinations</p>
     </div>
     <div class="stat-card">
-      <h3>7</h3>
+      <h3>10</h3>
       <p>States</p>
     </div>
     <div class="stat-card">
@@ -75,6 +75,63 @@
     </div>
   </div>
 </section>
+
+<!-- Locations Across India Section -->
+<section class="locations-section">
+  <div class="locations-container">
+    <h2 class="locations-title">Locations Across India</h2>
+    
+    <!-- 17 Amazing Destinations Across India -->
+    <div class="location-item">
+      <div class="region-label">📍 North:</div>
+      <div class="destinations-list">
+        Ayodhya, Agra, Ladakh, Srinagar
+      </div>
+    </div>
+
+    <div class="location-item">
+      <div class="region-label">📍 West:</div>
+      <div class="destinations-list">
+        Diu, Mount Abu, Junagadh
+      </div>
+    </div>
+
+    <div class="location-item">
+      <div class="region-label">📍 South:</div>
+      <div class="destinations-list">
+        Rameswaram, Chennai, Ooty
+      </div>
+    </div>
+
+    <div class="location-item">
+      <div class="region-label">📍 Southwest:</div>
+      <div class="destinations-list">
+        Kerala, Munnar, Alleppey
+      </div>
+    </div>
+
+    <div class="location-item">
+      <div class="region-label">📍 South-Central:</div>
+      <div class="destinations-list">
+        Pondicherry, Coorg
+      </div>
+    </div>
+
+    <div class="location-item">
+      <div class="region-label">📍 South-East:</div>
+      <div class="destinations-list">
+        Hyderabad, Vizag
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-container">
+  <button class="filter-btn active">All</button>
+  <button class="filter-btn">Mountain</button>
+  <button class="filter-btn">Beach</button>
+  <button class="filter-btn">City</button>
+</div>
 
 <!-- Destinations Section -->
 <section id="destinations" class="destinations">
@@ -437,6 +494,251 @@
       </div>
     </div>
 
+    <!-- Ooty (Tamil Nadu) -->
+    <div class="destination-card" data-category="hill" onclick="window.location.href='ooty.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
+        <img src="images/ooty.jpg" alt="Ooty" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏔️'}))">
+        <div class="card-badge">🏔️ Hill Station</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Ooty</h3>
+          <div class="card-rating">⭐ 4.7/5</div>
+        </div>
+        <p class="destination-type">Queen of Hill Stations</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">April - June, September - November</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Ooty Lake - Scenic boating experience</li>
+            <li>Botanical Garden - Diverse flora</li>
+            <li>Doddabetta Peak - Panoramic views</li>
+            <li>Tea Estates - Lush green plantations</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Ooty+Tamil+Nadu" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="ooty.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Munnar (Kerala) -->
+    <div class="destination-card" data-category="hill" onclick="window.location.href='munnar.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); position: relative; overflow: hidden;">
+        <img src="images/munnar.jpg" alt="Munnar" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌄'}))">
+        <div class="card-badge">🌄 Mountain</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Munnar</h3>
+          <div class="card-rating">⭐ 4.8/5</div>
+        </div>
+        <p class="destination-type">Tea Garden Paradise</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">October - May</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Eravikulam National Park - Nilgiri tahr sanctuary</li>
+            <li>Mattupetty Dam - Scenic reservoir</li>
+            <li>Top Station - Highest point with views</li>
+            <li>Tea Gardens - Verdant plantations</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Munnar+Kerala" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="munnar.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alleppey (Kerala) -->
+    <div class="destination-card" data-category="water" onclick="window.location.href='alleppey.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%); position: relative; overflow: hidden;">
+        <img src="images/alleppey.jpg" alt="Alleppey" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏝️'}))">
+        <div class="card-badge">🏝️ Backwaters</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Alleppey</h3>
+          <div class="card-rating">⭐ 4.9/5</div>
+        </div>
+        <p class="destination-type">Venice of the East</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">November - February</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Backwaters - Serene waterways</li>
+            <li>Houseboat Cruises - Unique floating stays</li>
+            <li>Vembanad Lake - Largest lagoon in Kerala</li>
+            <li>Alleppey Beach - Picturesque shoreline</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Alleppey+Kerala" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="alleppey.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pondicherry -->
+    <div class="destination-card" data-category="beach" onclick="window.location.href='pondicherry.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); position: relative; overflow: hidden;">
+        <img src="images/pondicherry.jpg" alt="Pondicherry" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🏖️'}))">
+        <div class="card-badge">🏖️ Beach</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Pondicherry</h3>
+          <div class="card-rating">⭐ 4.6/5</div>
+        </div>
+        <p class="destination-type">French Colonial Charm</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">November - February</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>French Colony - Colonial architecture</li>
+            <li>Promenade Beach - Sandy coastline</li>
+            <li>Auroville - Spiritual community</li>
+            <li>Paradise Beach - Pristine sands</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Pondicherry+India" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="pondicherry.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coorg (Karnataka) -->
+    <div class="destination-card" data-category="hill" onclick="window.location.href='coorg.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #8b6914 0%, #c9a961 100%); position: relative; overflow: hidden;">
+        <img src="images/coorg.jpg" alt="Coorg" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌿'}))">
+        <div class="card-badge">🌿 Hill Station</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Coorg</h3>
+          <div class="card-rating">⭐ 4.7/5</div>
+        </div>
+        <p class="destination-type">Land of Coffee</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">September - March</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Abbey Falls - Scenic waterfall</li>
+            <li>Talacauvery - Source of Kaveri River</li>
+            <li>Raja's Seat - Panoramic viewpoint</li>
+            <li>Coffee Estates - World-class plantations</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Coorg+Karnataka" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="coorg.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hyderabad (Telangana) -->
+    <div class="destination-card" data-category="city" onclick="window.location.href='hyderabad.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 100%); position: relative; overflow: hidden;">
+        <img src="images/hyderabad.jpg" alt="Hyderabad" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🕌'}))">
+        <div class="card-badge">🕌 City</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Hyderabad</h3>
+          <div class="card-rating">⭐ 4.5/5</div>
+        </div>
+        <p class="destination-type">City of Pearls</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">October - February</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Charminar - Iconic 16th-century monument</li>
+            <li>Golconda Fort - Ancient fortress</li>
+            <li>Ramoji Film City - Entertainment hub</li>
+            <li>Hussain Sagar Lake - Scenic water body</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Hyderabad+Telangana" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="hyderabad.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vizag (Andhra Pradesh) -->
+    <div class="destination-card" data-category="beach" onclick="window.location.href='vizag.html'" style="cursor: pointer;">
+      <div class="card-header" style="background: linear-gradient(135deg, #00D2FF 0%, #3A7BD5 100%); position: relative; overflow: hidden;">
+        <img src="images/vizag.jpg" alt="Vizag" class="card-image" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className: 'card-image-placeholder', textContent: '🌊'}))">
+        <div class="card-badge">🌊 Beach</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header-top">
+          <h3>Vizag</h3>
+          <div class="card-rating">⭐ 4.6/5</div>
+        </div>
+        <p class="destination-type">Coastal Gem</p>
+        
+        <div class="info-group">
+          <span class="info-label">Best Season:</span>
+          <span class="info-value">October - February</span>
+        </div>
+        
+        <div class="highlights">
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>RK Beach - Long sandy shoreline</li>
+            <li>Kailasagiri - Hilltop park with views</li>
+            <li>Araku Valley - Scenic hill station</li>
+            <li>Borra Caves - Ancient limestone caves</li>
+          </ul>
+        </div>
+        
+        <div class="card-actions">
+          <a href="https://maps.google.com/maps/search/Vizag+Andhra+Pradesh" target="_blank" class="maps-btn" onclick="event.stopPropagation();">🗺️ Map</a>
+          <a href="vizag.html" class="learn-more" onclick="event.stopPropagation()">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -446,11 +748,13 @@
   <div class="map-container">
     <div class="map-placeholder">
       <div class="map-info">
-        <h3>🗺️ 10 Amazing Destinations Across India</h3>
-        <p>North: Ayodhya, Agra, Ladakh, Srinagar</p>
-        <p>West: Diu, Mount Abu, Junagadh</p>
-        <p>South: Rameswaram, Chennai</p>
-        <p>Southwest: Kerala</p>
+        <h3>🗺️ 17 Amazing Destinations Across India</h3>
+        <p><strong>North:</strong> Ayodhya, Agra, Ladakh, Srinagar</p>
+        <p><strong>West:</strong> Diu, Mount Abu, Junagadh</p>
+        <p><strong>South:</strong> Rameswaram, Chennai, Ooty</p>
+        <p><strong>Southwest:</strong> Kerala, Munnar, Alleppey</p>
+        <p><strong>South-Central:</strong> Pondicherry, Coorg</p>
+        <p><strong>South-East:</strong> Hyderabad, Vizag</p>
       </div>
     </div>
   </div>

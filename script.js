@@ -1,5 +1,58 @@
 // =====================================================
-// SMOOTH SCROLLING FOR NAVIGATION
+// NAVBAR SCROLL EFFECT
+// =====================================================
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// =====================================================
+// FILTER FUNCTIONALITY (Mountain, Beach, City)
+// =====================================================
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const destinationCards = document.querySelectorAll('.destination-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const filter = this.textContent.toLowerCase().trim();
+      
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+
+      // Filter cards
+      destinationCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category') || '';
+        
+        if (filter === 'all') {
+          card.classList.remove('hidden');
+          card.style.display = '';
+        } else {
+          if (cardCategory.includes(filter) || card.textContent.toLowerCase().includes(filter)) {
+            card.classList.remove('hidden');
+            card.style.display = '';
+          } else {
+            card.classList.add('hidden');
+            card.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+
+  // Set first filter button as active
+  if (filterButtons.length > 0) {
+    filterButtons[0].classList.add('active');
+  }
+});
+
+// =====================================================
+// INSTANT NAVIGATION (Fast scrolling)
 // =====================================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -8,26 +61,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (href !== '#' && document.querySelector(href)) {
       e.preventDefault();
       document.querySelector(href).scrollIntoView({
-        behavior: 'smooth',
+        behavior: 'auto',
         block: 'start'
       });
     }
   });
 });
 
-// Stats Counter Animation
-function animateCounter(element, target, duration = 2000) {
+// Stats Counter Animation (Optimized)
+function animateCounter(element, target, duration = 1500) {
   let current = 0;
-  const increment = target / (duration / 50);
-  const timer = setInterval(() => {
-    current += increment;
-    if (current >= target) {
-      element.textContent = target;
-      clearInterval(timer);
+  const startTime = performance.now();
+  
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    current = Math.floor(target * progress);
+    element.textContent = current;
+    
+    if (progress < 1) {
+      requestAnimationFrame(update);
     } else {
-      element.textContent = Math.floor(current);
+      element.textContent = target;
     }
-  }, 50);
+  }
+  requestAnimationFrame(update);
 }
 
 // Trigger counter animation on scroll
@@ -55,47 +113,44 @@ document.querySelectorAll('.stat-card').forEach(card => {
   counterObserver.observe(card);
 });
 
-// Intersection Observer for animations on scroll
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
+// Intersection Observer for animations on scroll (Optimized - no animations)
 const observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
     }
   });
-}, observerOptions);
+}, { threshold: 0.05 });
 
-// Observe destination cards for animation
+// Observe destination cards
 document.querySelectorAll('.destination-card').forEach(card => {
-  card.style.opacity = '0';
-  card.style.transform = 'translateY(30px)';
-  card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  card.style.opacity = '1';
   observer.observe(card);
 });
 
-// Search Filter Functionality
+// Search Filter Functionality (Optimized with debouncing)
 const searchInput = document.getElementById('searchInput');
 if (searchInput) {
+  let debounceTimer;
   searchInput.addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase();
-    const destinationCards = document.querySelectorAll('.destination-card');
-    
-    destinationCards.forEach(card => {
-      const h3 = card.querySelector('h3');
-      const destinationName = h3 ? h3.textContent.toLowerCase() : '';
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      const searchTerm = this.value.toLowerCase();
+      const destinationCards = document.querySelectorAll('.destination-card');
       
-      if (destinationName.includes(searchTerm)) {
-        card.classList.remove('hidden');
-        card.style.animation = 'fadeInUp 0.3s ease';
-      } else {
-        card.classList.add('hidden');
-      }
-    });
+      destinationCards.forEach(card => {
+        const h3 = card.querySelector('h3');
+        const destinationName = h3 ? h3.textContent.toLowerCase() : '';
+        
+        if (destinationName.includes(searchTerm)) {
+          card.classList.remove('hidden');
+          card.style.display = '';
+        } else {
+          card.classList.add('hidden');
+          card.style.display = 'none';
+        }
+      });
+    }, 150);
   });
 }
 

@@ -20,7 +20,16 @@ tourist-website/
 │   ├── mount-abu.jpg
 │   ├── rameswaram.jpg
 │   ├── junagadh.jpg
-│   └── chennai.jpg
+│   ├── chennai.jpg
+│   ├── ayodhya.jpg
+│   ├── agra.jpg
+│   ├── ooty.jpg
+│   ├── munnar.jpg
+│   ├── alleppey.jpg
+│   ├── pondicherry.jpg
+│   ├── coorg.jpg
+│   ├── hyderabad.jpg
+│   └── vizag.jpg
 ├── index.html
 ├── script.js
 ├── style.css
@@ -31,18 +40,27 @@ tourist-website/
 
 ## 🎯 Step 2: Image Files You Need
 
-Add these 8 image files to the `images` folder:
+Add these 17 image files to the `images` folder:
 
-| Destination | File Name | Size Suggestion |
+| Destination | File Name | Direct Download Link |
 |-------------|-----------|-----------------|
-| Ladakh | `ladakh.jpg` | 1200x600px or similar landscape |
-| Kerala | `kerala.jpg` | 1200x600px or similar landscape |
-| Diu | `diu.jpg` | 1200x600px or similar landscape |
-| Srinagar | `srinagar.jpg` | 1200x600px or similar landscape |
-| Mount Abu | `mount-abu.jpg` | 1200x600px or similar landscape |
-| Rameswaram | `rameswaram.jpg` | 1200x600px or similar landscape |
-| Junagadh | `junagadh.jpg` | 1200x600px or similar landscape |
-| Chennai | `chennai.jpg` | 1200x600px or similar landscape |
+| Ladakh | `ladakh.jpg` | https://source.unsplash.com/1200x600/?ladakh,mountains |
+| Kerala | `kerala.jpg` | https://source.unsplash.com/1200x600/?kerala,backwaters |
+| Diu | `diu.jpg` | https://source.unsplash.com/1200x600/?diu,beach |
+| Srinagar | `srinagar.jpg` | https://source.unsplash.com/1200x600/?srinagar,kashmir |
+| Mount Abu | `mount-abu.jpg` | https://source.unsplash.com/1200x600/?mountabu,hills |
+| Rameswaram | `rameswaram.jpg` | https://source.unsplash.com/1200x600/?rameshwaram,temple |
+| Junagadh | `junagadh.jpg` | https://source.unsplash.com/1200x600/?junagadh,gujarat |
+| Chennai | `chennai.jpg` | https://source.unsplash.com/1200x600/?chennai,marina-beach |
+| Ayodhya | `ayodhya.jpg` | https://source.unsplash.com/1200x600/?ayodhya,ram-mandir |
+| Agra | `agra.jpg` | https://source.unsplash.com/1200x600/?tajmahal,agra |
+| Ooty | `ooty.jpg` | https://source.unsplash.com/1200x600/?ooty,hills |
+| Munnar | `munnar.jpg` | https://source.unsplash.com/1200x600/?munnar,tea-gardens |
+| Alleppey | `alleppey.jpg` | https://source.unsplash.com/1200x600/?alleppey,houseboat |
+| Pondicherry | `pondicherry.jpg` | https://source.unsplash.com/1200x600/?pondicherry,beach |
+| Coorg | `coorg.jpg` | https://source.unsplash.com/1200x600/?coorg,coffee |
+| Hyderabad | `hyderabad.jpg` | https://source.unsplash.com/1200x600/?charminar,hyderabad |
+| Vizag | `vizag.jpg` | https://source.unsplash.com/1200x600/?vizag,beach |
 
 **Image Format:** `.jpg` (JPEG) - ideal for photography
 - You can also use `.png` if needed, just update the filename in the folder
@@ -125,6 +143,20 @@ The HTML is already configured:
 
 ---
 
+## � Easy Download Script
+
+Click the links in the table above to download images directly from Unsplash! Each link generates a random high-quality image matching your destination theme.
+
+**Steps:**
+1. Click any URL link from the table
+2. Right-click the image → Save image as...
+3. Save with exact filename from table (e.g., `ooty.jpg`)
+4. Save to `images/` folder
+5. Repeat for all 17 destinations
+6. Refresh your website - all images will appear!
+
+---
+
 ## 📞 Troubleshooting
 
 **Images not showing?**
@@ -141,10 +173,13 @@ The HTML is already configured:
 
 ## 🎉 Next Steps
 
-1. Download 8 images from free sources
-2. Save them to `images/` folder with correct names
+1. Download 17 images using the direct links from the table (Steps 2)
+2. Save them to `images/` folder with correct filenames
 3. Open `index.html` in your browser
-4. All destination placeholders will now show real photos!
+4. All 17 destination cards will now show real photos!
+5. Your website is ready to present! 🚀
 
-**Ready to present to your lectures!** 🎓
+**Status:** 17 destinations added • Image guide ready • Quick download links available
+
+**Ready to present to your class!** 🎓
 

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ooty - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #667eea;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #667eea;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #667eea;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #667eea;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🏔 OOTY</h1>
+  <p class="subtitle">Queen of Hill Stations - Tamil Nadu's Alpine Paradise</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">April - June, Sept - Nov</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Altitude</div>
+        <div class="fact-value">7,600 ft (2,300 m)</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Relaxation, Sightseeing</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Climate</div>
+        <div class="fact-value">Cool & Pleasant</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Ooty (Udhagamandalam, meaning "village in the mountains" in Toda language) is a charming hill station located in the Nilgiri Hills of Tamil Nadu in southern India. Situated at 7,600 feet (2,300 meters) altitude in the eastern section of the Western Ghats, it is often called the "Queen of Hill Stations." Ooty is the district headquarters of Nilgiri district and is easily accessible via train (UNESCO heritage Nilgiri Railway), road (Tamil Nadu State Highway), and air (nearest airport Coimbatore ~80 km). The town sits among verdant tea plantation-covered slopes.</p>
+  </div>
+
+  <!-- History -->
+  <div class="section">
+    <h2>📚 History & Cultural Significance</h2>
+    <p>Ooty's history is uniquely intertwined with British colonial India. The hill station was discovered and developed by the British East India Company in the early 19th century as a "Crown Jewel" for colonial officials seeking refuge from Indian heat. John Sullivan, a British collector, established Ooty around 1819 as a planned hill station. The British developed infrastructure, introduced English flowers and trees, built British-style cottages, and established the iconic Nilgiri Mountain Railway (opened 1899) - now a UNESCO World Heritage Railway.</p>
+    <p style="margin-top: 15px;">Before British arrival, the Nilgiri hills were inhabited by ancient indigenous people - the Todas, Kotas, and Badagas tribes lived in harmony with the landscape for centuries. Traditional Toda culture, with unique architecture, textiles, and pastoral practices, is still preserved in the region.</p>
+    <p style="margin-top: 15px;">During the British Raj, Ooty became a fashionable retreat for colonial administrators, becoming known as the "Summer Capital of Madras Presidency." The establishment of government offices in Ooty meant that during summer, the entire colonial administration shifted to the hill station. This heritage influence is visible in Victorian architecture, colonial clubs, and the Railway Museum.</p>
+    <p style="margin-top: 15px;">Post-independence, Ooty remained one of South India's premier hill stations, attracting Indian tourists and becoming a standard honeymoon destination. The Botanical Gardens were established to study and preserve plant species from across the world. Today, Ooty represents a successful blend of colonial heritage, indigenous culture, and modern tourism development.</p>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h2>✨ Key Attractions & Features</h2>
+    <p>Ooty's charm lies in its colonial heritage, natural beauty, and unique geographical position. The hill station offers cool climate, misty landscapes, and world-class botanical gardens. The region is characterized by rolling tea plantations, eucalyptus forests, and the famous Nilgiri Mountain Railway.</p>
+    <ul class="highlights-list">
+      <li><strong>Ooty Lake</strong> - Scenic 65-acre artificial lake built in 1820; Created by John Sullivan; Boating facilities (row boats, pedal boats, motor boats); Beautiful for evening walks; Surrounded by eucalyptus trees; Perfect for photography with misty backdrop; Fishing allowed; Miniature train rides around lake</li>
+      <li><strong>Botanical Garden</strong> - 22-acre garden established in 1848; 20,000+ plant species from around world; Italian garden section; Exotic plants and flowers in themed sections; Annual Summer Festival (May-June) with flower shows; Concerts and cultural events held here; Tree house viewing point</li>
+      <li><strong>Doddabetta Peak</strong> - Highest point in Nilgiri district (8,650 ft); Drivable via curved mountain roads; Telescopes for viewing distant landscape; 360-degree panoramic views; Subject of colonial-era hunting expeditions; Sunset views into neighboring states</li>
+      <li><strong>Nilgiri Mountain Railway</strong> - UNESCO World Heritage Railway; Historic narrow-gauge railway (opened 1899); 46 km journey from Ooty to Mettupalayam (5 hours); 16 tunnels and 250 bridges; Cogwheel mechanism for steep inclines; British engineering marvel; Stunning scenery through tea plantations and forests; Historic journey preserved by Indian Railways</li>
+      <li><strong>Tea Estates & Plantations</strong> - Sprawling green tea gardens covering slopes; Working plantations allowing visitor tours; Learn tea cultivation, harvesting, and processing; Authentic "high-grown" tea tasting (altitude produces unique flavor); 2,500m+ elevation tea considered world-class; Scenic trekking through plantation rows</li>
+      <li><strong>Stone House (Raj's Palace)</strong> - Historic colonial mansion built in 1850s; Located on Mysore road; Owned by British official; Classic British architecture with slate roof; Beautiful views from house; Tourist spot representing colonial elegance</li>
+      <li><strong>Toda Mandir & Toda Villages</strong> - Sacred temple of indigenous Toda people; Ancient Toda settlements with unique architecture (barrel-shaped roofs); Living museum of pre-colonial Nilgiri culture; Handicrafts showcase (famous shawls and textiles); Understand 2,000+ year old tribal traditions</li>
+      <li><strong>Rose Garden</strong> - 6 acres dedicated to different rose varieties; 20,000+ roses in bloom season; Annual Rose Festival (May); Fragrant pathways and themed sections; Photography paradise; Horticulture study center</li>
+      <li><strong>Avalanche Lake</strong> - Picturesque small lake surrounded by dense forest; 13 km from Ooty; Peaceful alternative to crowded Ooty Lake; Trekking destination; Serene atmosphere for nature lovers</li>
+      <li><strong>Kotagiri (Nearby Town)</strong> - Sister hill station 35 km away; Tea estates and viewpoints; Rangaswamy Peak; Ketti Valley views; Traditional weaving centers</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit -->
+  <div class="section">
+    <h2>🎯 Experiences & Why Visit Ooty?</h2>
+    <p>Ooty offers a unique combination of colonial nostalgia, natural beauty, and indigenous culture. The cool climate, scenic landscapes, and rich heritage make it a quintessential Indian hill station experience.</p>
+    <ul class="highlights-list">
+      <li><strong>Colonial Heritage Experience</strong> - Stay in colonial-era properties; Visit heritage hotels and clubs; Walk through tree-lined colonial town; Understand British India through architecture and museums; Experience Victorian lifestyle still preserved</li>
+      <li><strong>Scenic Beauty & Nature</strong> - Walk misty mountains with panoramic valley views; Photography of mist-covered tea plantations at dawn; Trek through forests with diverse bird species; Experience cool climate (always 10-15°C cooler than plains)</li>
+      <li><strong>Adventure Activities</strong> - Trekking routes through hill forests and tea estates; Mountain biking on scenic roads; Rock climbing; Paragliding from higher elevations; Horseback riding in plantation areas</li>
+      <li><strong>Cultural Immersion</strong> - Learn indigenous Toda culture and traditions; Visit working tea estates and understand cultivation process; Purchase handmade Toda shawls and traditional textiles; Interact with local communities; Taste regional cuisine</li>
+      <li><strong>Heritage Railway Journey</strong> - The Nilgiri Mountain Railway is an experience in itself; Historic British-era trains; Scenic 46 km hill descent; Steam locomotive (operational on special occasions); UNESCO heritage site journey; Photography from train windows</li>
+      <li><strong>Horticulture & Botany</strong> - Study rare plant species in Botanical Garden; Learn flower cultivation and organization; Attend annual flower shows and horticultural exhibitions; Photography of exotic flowers</li>
+      <li><strong>Relaxation & Wellness</strong> - Cool climate naturally reduces body temperature and promotes relaxation; Meditative walks in gardens; Spa treatments (many resorts offer Ayurvedic treatments); Tea estates provide peaceful environments; Quiet evenings with misty views</li>
+      <li><strong>Photography Paradise</strong> - Misty mountain landscapes at sunrise; Tea plantation rows in early morning light; Botanical garden flower photography; Lake reflections with mist; Colonial architecture documentation; Rainbow effects in misty regions</li>
+      <li><strong>Seasonal Experiences</strong> - April-May: Summer season, flowers in full bloom, perfect weather; June-July: Monsoon with dramatic clouds and misty vistas; August-October: Crisp air, clear views, harvest season; November-March: Cool season with possible light fog</li>
+    </ul>
+  </div>
+
+  <!-- Practical Information -->
+  <div class="section">
+    <h2>💡 Practical Information</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+      <div>
+        <h4 style="color: #52c41a; margin-bottom: 10px;">💰 Budget (Daily)</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget</strong> - ₹1,000-1,800 (guesthouses, local eateries, local transport)</li>
+          <li><strong>Mid-range</strong> - ₹2,200-4,000 (3-4 star hotels, restaurant meals, tours)</li>
+          <li><strong>Luxury</strong> - ₹5,000+ (heritage hotels, fine dining, private guides)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #52c41a; margin-bottom: 10px;">📅 Best Time to Visit</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>April-June</strong> - Summer, cool weather (10-20°C)</li>
+          <li><strong>September-February</strong> - Pleasant, clear skies for photography</li>
+          <li><strong>Avoid:</strong> March (dry and hot), July-August (monsoon)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #52c41a; margin-bottom: 10px;">🚂 How to Reach</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Air:</strong> Coimbatore Airport (86km away, 2-3 hours by road)</li>
+          <li><strong>Rail:</strong> Ooty Railway Station (UNESCO Nilgiri Toy Train from Coonoor)</li>
+          <li><strong>Road:</strong> Bangalore-Mysore-Ooty highway (excellent connectivity)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #52c41a; margin-bottom: 10px;">🏨 Where to Stay</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget:</strong> Guesthouses, hostels (₹600-1,200)</li>
+          <li><strong>Mid-range:</strong> 3-4 star hill resort hotels (₹1,800-3,500)</li>
+          <li><strong>Luxury:</strong> Heritage hotels, premium resorts (₹4,500+)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #52c41a; margin-bottom: 10px;">⏱️ Recommended Duration</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Quick Visit:</strong> 2-3 days (lake, gardens, toy train)</li>
+          <li><strong>Standard Stay:</strong> 3-4 days (gardens, nature walks, local culture)</li>
+          <li><strong>Extended Tour:</strong> 5-7 days (Coonoor, Doddabetta, nearby plantations)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nearby Places -->
+  <div class="section">
+    <h2>🗺️ Must-Visit Nearby Places</h2>
+    <ul class="highlights-list">
+      <li><strong>Botanical Garden</strong> - Diverse flora and scenic walking paths (Local)</li>
+      <li><strong>Ooty Lake</strong> - Popular spot for boating and views (Local)</li>
+      <li><strong>Doddabetta Peak</strong> - Highest point with telescopes (Local day trip)</li>
+      <li><strong>Tea Estates</strong> - Experience working plantations (Local)</li>
+      <li><strong>Nilgiri Mountain Railway</strong> - Heritage train journey (Full day)</li>
+      <li><strong>Stone House</strong> - Historic colonial structure (Local)</li>
+    </ul>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Ooty+Tamil+Nadu+India" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Ooty" target="_blank" class="btn btn-secondary">Learn More About Ooty</a>
+  </div>
+
+</div>
+
+</body>
+</html>
