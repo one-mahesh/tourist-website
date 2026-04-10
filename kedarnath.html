@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kedarnath - Incredible India Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .nav-back {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-back a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .nav-back a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hero-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+    
+    .detail-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+    
+    .quick-facts {
+      background: white;
+      border-left: 5px solid #667eea;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .quick-facts h3 {
+      color: #667eea;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .fact-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-bottom: 3px solid #667eea;
+    }
+    
+    .fact-label {
+      font-size: 12px;
+      color: #999;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .fact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .section h2 {
+      color: #667eea;
+      font-size: 26px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f0f0;
+      font-weight: 700;
+    }
+    
+    .section p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .highlights-list li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      border-radius: 5px;
+      color: #555;
+      font-size: 15px;
+    }
+    
+    .highlights-list strong {
+      color: #333;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-back">
+  <a onclick="if(history.length > 1) window.history.back(); else window.location.href='index.html';" style="cursor: pointer;">← Back to Home</a>
+</div>
+
+<div class="hero-header">
+  <h1>🛕 KEDARNATH</h1>
+  <p class="subtitle">Sacred Jyotirlinga in the Garhwal Himalayas</p>
+</div>
+
+<div class="detail-container">
+
+  <!-- Quick Facts -->
+  <div class="quick-facts">
+    <h3>📍 Quick Facts</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-label">Best Season</div>
+        <div class="fact-value">May - October</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Altitude</div>
+        <div class="fact-value">3,583 meters</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Best For</div>
+        <div class="fact-value">Pilgrimage, Trekking</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-label">Rating</div>
+        <div class="fact-value">⭐ 4.9/5</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="section">
+    <h2>📍 Location</h2>
+    <p>Kedarnath is located in the Rudraprayag district of Uttarakhand, nestled high in the Garhwal Himalayas at an altitude of 3,583 meters above sea level. Situated beside the sacred Mandakini River and surrounded by rugged snow-clad peaks, Kedarnath is one of the most breathtakingly situated Jyotirlingas in India. The temple town is accessible by a challenging 14 km trek from Gaurikund or by helicopter services to nearby helipads.</p>
+  </div>
+
+  <!-- History & Importance -->
+  <div class="section">
+    <h2>📚 History & Importance</h2>
+    <p>Kedarnath Temple is one of the twelve sacred Jyotirlingas of Lord Shiva and forms an essential part of the Char Dham Yatra, one of Hinduism's most important pilgrimage circuits. Its roots are traced back to the era of the Mahabharata, when the Pandavas, seeking forgiveness from Shiva after the great war, attempted to find him in Kedarnath.</p>
+    <p style="margin-top: 15px;">According to ancient legend, Shiva appeared before the Pandavas in the form of a bull, and when they tried to capture him, he disappeared into the ground at this sacred spot. The hump of the bull is worshipped as the Jyotirlinga, making it one of the most sacred pilgrimage sites. Adi Shankaracharya, the great 8th-century philosopher and spiritual reformer, is credited with re-establishing the temple in its present form and consolidated Hindu philosophy through his teachings.</p>
+    <p style="margin-top: 15px;">The temple has been a spiritual center for thousands of years, attracting millions of devotees who believe that a pilgrimage to Kedarnath cleanses one's sins and grants liberation (moksha). Despite natural calamities and challenging geography, the temple remains one of India's most revered pilgrimage destinations.</p>
+  </div>
+
+  <!-- Key Attractions -->
+  <div class="section">
+    <h2>✨ Key Attractions & Features</h2>
+    <p>Kedarnath offers a unique combination of spiritual significance and natural beauty, with numerous sacred sites and breathtaking mountain scenery for trekkers and pilgrims.</p>
+    <ul class="highlights-list">
+      <li><strong>Kedarnath Temple</strong> - One of 12 sacred Jyotirlingas; Classic North Indian stone architecture with tall pyramidal shikhara; Sacred sanctuary beside Mandakini River; 14 km trek from Gaurikund</li>
+      <li><strong>Bhairavnath Temple</strong> - Located 2 km from main temple on hilltop; Dedicated to Bhairav, guardian of Kedarnath; Panoramic valley views; Less crowded, ideal for meditation</li>
+      <li><strong>Vasuki Tal</strong> - Remote glacial alpine lake 10 km from Kedarnath; Named after mythical serpent king; Crystal-clear waters reflecting snow peaks; Challenging high-altitude trek</li>
+      <li><strong>Chorabari Glacier</strong> - Dramatic ice formations in high Himalayan zone; Accessible only through experienced trekking; Snow-covered ridges and pristine alpine environment</li>
+      <li><strong>Chorabari Tal</strong> - Base lake below glacier; Moderate trek from Kedarnath; Resting point for higher altitude treks; Turquoise waters with alpine vegetation</li>
+      <li><strong>Shiva Kunda</strong> - High-altitude natural pool on Vasuki Tal route; Above tree line at stark, rugged landscape; Icy blue waters with sacred significance; Key meditation spot</li>
+      <li><strong>Adi Shankaracharya Samadhi</strong> - Located near main temple complex; Dedicated to 8th-century spiritual reformer; Serene meditation space; Symbol of spiritual presence and teachings</li>
+      <li><strong>Mandakini River Ghats</strong> - Sacred river steps for ritual bathing; Pure Himalayan mountain waters; Spiritual purification site before temple worship</li>
+    </ul>
+  </div>
+
+  <!-- Why Visit Kedarnath -->
+  <div class="section">
+    <h2>🎯 Why Visit Kedarnath?</h2>
+    <p>Kedarnath represents a unique intersection of spiritual devotion and natural majesty, drawing millions of pilgrims annually to experience its transformative energy.</p>
+    <ul class="highlights-list">
+      <li><strong>Sacred Pilgrimage</strong> - One of India's most important religious destinations; Part of Char Dham circuit; Believed to grant moksha (liberation) to devotees; Experience profound spiritual awakening</li>
+      <li><strong>High-Altitude Trekking</strong> - Challenging but rewarding trek through alpine forests and meadows; Experience of Himalayan wilderness and pristine nature; Multiple alpine lakes and glaciers</li>
+      <li><strong>Natural Beauty</strong> - Surrounded by snow-clad Himalayan peaks; Pristine glacial lakes with mirror-like reflections; Rare alpine flora and fauna; Serene forest landscapes</li>
+      <li><strong>Spiritual Archaeology</strong> - Ancient temple architecture and design reflects Vedic principles; Marble sanctuary with centuries-old spiritual practices; Living connection to Mahabharata era</li>
+      <li><strong>Adventure & Meditation</strong> - Combine physical challenge with spiritual practice; Multiple meditation sites for reflection; Less crowded than major temples; Authentic spiritual atmosphere</li>
+      <li><strong>Photography Paradise</strong> - Dramatic Himalayan peaks at sunrise and sunset; Snow-covered landscape; Ancient temple architecture; Alpine lake reflections</li>
+      <li><strong>Cultural Immersion</strong> - Experience authentic Himalayan pilgrimage traditions; Meet fellow devotees from across India; Traditional prayer rituals and ceremonies; Local mountain culture</li>
+    </ul>
+  </div>
+
+  <!-- Practical Information -->
+  <div class="section">
+    <h2>💡 Practical Information</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+      <div>
+        <h4 style="color: #667eea; margin-bottom: 10px;">💰 Budget (Daily)</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Budget</strong> - ₹1,500-2,500 (guesthouses, local food)</li>
+          <li><strong>Mid-range</strong> - ₹3,000-6,000 (comfortable stays, guides)</li>
+          <li><strong>Luxury</strong> - ₹7,000+ (premium accommodation)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #667eea; margin-bottom: 10px;">📅 Best Time</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>May-June</strong> - Temple opening season</li>
+          <li><strong>July-September</strong> - Peak season, clear skies</li>
+          <li><strong>October</strong> - Autumn beauty, moderate crowds</li>
+          <li><strong>Closed:</strong> November-April (snow)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #667eea; margin-bottom: 10px;">✈️ How to Reach</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Nearest Airport:</strong> Jolly Grant, Dehradun (230 km)</li>
+          <li><strong>Trek Start:</strong> Gaurikund (14 km trek to temple)</li>
+          <li><strong>Helicopter:</strong> Services available from Phata</li>
+          <li><strong>Base Town:</strong> Rudraprayag (45 km)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: #667eea; margin-bottom: 10px;">⚠️ Important Notes</h4>
+        <ul class="highlights-list" style="margin-bottom: 0;">
+          <li><strong>Altitude:</strong> 3,583m - Acclimatization essential</li>
+          <li><strong>Trek Difficulty:</strong> Moderate to Challenging</li>
+          <li><strong>What to Carry:</strong> Warm clothing, proper shoes, medicines</li>
+          <li><strong>Duration:</strong> 2-3 days trek + stay</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+    <a href="https://www.google.com/maps?q=Kedarnath+Uttarakhand" target="_blank" class="btn btn-primary">📍 View on Google Maps</a>
+    <a href="https://en.wikipedia.org/wiki/Kedarnath" target="_blank" class="btn btn-secondary">Learn More About Kedarnath</a>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -478,7 +478,7 @@ body {
 /* ===== DESTINATION CARDS (MODERN) ===== */
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -699,6 +699,49 @@ body {
   box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
 }
 
+/* ===== ACTION BUTTONS ===== */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
 .hidden {
   display: none !important;
 }
@@ -718,10 +761,53 @@ body {
   opacity: 0.8;
 }
 
+/* ===== MAP SECTION ===== */
+.map-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f1f8 100%);
+  margin: 40px 0;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.map-placeholder {
+  background: white;
+  border-radius: 15px;
+  padding: 50px 30px;
+  box-shadow: 0 8px 32px rgba(0, 102, 204, 0.1);
+}
+
+.map-info {
+  text-align: center;
+}
+
+.map-info h3 {
+  font-size: 28px;
+  color: #0066cc;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.map-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.map-info strong {
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .destinations-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-title {
@@ -806,4 +892,95 @@ body {
   .stat-card {
     padding: 30px 20px;
   }
+
+  #scrollToTop {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .map-info {
+    font-size: 14px;
+  }
+
+  .map-info h3 {
+    font-size: 20px;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  .btn-primary {
+    border: 2px solid #333;
+  }
+
+  .btn-secondary {
+    border: 3px solid #333;
+  }
+}
+
+/* ===== KEYBOARD ACCESSIBILITY ===== */
+a:focus, button:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.btn:focus, .filter-btn:focus, .hero-btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.5);
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0066cc;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 0 0 5px 0;
+  z-index: 10000;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* Improved image loading state */
+img.card-image {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+img.loading {
+  animation: shimmer 1.5s infinite;
 }

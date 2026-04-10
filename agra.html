@@ -36,7 +36,7 @@
 <body>
 
 <div class="nav-back">
-  <a href="index.html">← Back to Home</a>
+  <a onclick="if(history.length > 1) window.history.back(); else window.location.href='index.html';" style="cursor: pointer;">← Back to Home</a>
 </div>
 
 <div class="hero-header">

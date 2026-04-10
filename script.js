@@ -21,9 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const filter = this.textContent.toLowerCase().trim();
       
-      // Update active button
-      filterButtons.forEach(btn => btn.classList.remove('active'));
+      // Update active button and aria-pressed state
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      });
       this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
 
       // Filter cards
       destinationCards.forEach(card => {
@@ -167,4 +171,45 @@ document.querySelectorAll('.stat-card').forEach(card => {
 // Legacy function for old page links
 function openPage(page) {
   window.location.href = page;
+}
+
+// =====================================================
+// SCROLL TO TOP BUTTON
+// =====================================================
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Show/hide scroll to top button
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+});
+
+// Scroll to top on button click
+scrollToTopBtn.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// =====================================================
+// LAZY LOADING FOR IMAGES
+// =====================================================
+if ('IntersectionObserver' in window) {
+  const images = document.querySelectorAll('img.card-image');
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src || img.src;
+        img.classList.add('loaded');
+        observer.unobserve(img);
+      }
+    });
+  });
+  
+  images.forEach(img => imageObserver.observe(img));
 }
